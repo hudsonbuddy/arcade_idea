@@ -1,8 +1,226 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+@font-face{
+    font-family: Arcade;
+    src: url('../assets/arcade.ttf');
 }
 
-a {
-  color: #00B7FF;
+body {
+
+    font-family: "Arcade", "Arial", serif;
+    color: white;
+    background-image: url('../../images/background.gif');
+    background-size: cover;
 }
+
+.content{
+    padding-top: 40px;
+    margin: auto;
+    width: 800px;
+    height: 100%;
+    text-align: center;
+}
+
+#blurb{
+    color: lime;
+}
+
+#comingsoon{
+    font-size: 1.5em;
+    color: yellow;
+    padding-top: 25px;
+}
+
+footer{
+    width:100%;
+    height:50px;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+#copyright{
+    padding-left: 40px;
+}
+
+#faq{
+    font-size: 1.4em;
+    color: hotpink;
+    margin-left: 40px;
+}
+
+#credit{
+    padding-right: 40px;
+    float: right;
+}
+
+#char{
+    margin-bottom: 40px;
+}
+
+#waitingblurb{
+    color: lime;
+    font-size: 1.4em;
+}
+
+#gofullscreen{
+    display: block;
+    margin-top: 20px;
+    color: lime;
+    text-decoration: none;
+}
+
+#tryanother{
+    display:block;
+    margin-top: 10px;
+    color: darkorange;
+    text-decoration: none;
+}
+
+#gameover{
+    font-size: 5em;
+    color: red;
+    margin-top: 100px;
+}
+
+.clearSession{
+    margin-top: 20px;
+    color: black;
+    width: 50px;
+}
+
+.question{
+    font-size: 1.5em;
+    margin-top: 30px;
+}
+
+.answer{
+    color: lime;
+}
+
+/*sly frame stuff */
+.frame { 
+    width: 600px;
+    height: 500px; 
+    padding: 0; 
+    margin: auto;
+    margin-top: 50px;
+}
+.slidee { 
+    margin: 0; 
+    padding: 0; 
+    height: 500px; 
+    list-style: none;
+}
+.frame .slidee li {
+    float: left; 
+    padding: 0; 
+    width: 600px; 
+    height: 500px;
+}
+
+.chooserdiv{
+
+}
+
+.choosergif{
+    height: 300px;
+}
+
+.choosertitle{
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.chooserblurb{
+    margin-top: 10px;
+    color: yellow;
+}
+.scrollbar { 
+    width: 400px; 
+    height: 10px;
+    margin: auto;
+}
+.scrollbar .handle {
+    width: 100px; /* overriden if dynamicHandle: 1 */
+    height: 100%;
+    background: #222;
+}
+
+
+
+@media screen and (max-width: 800px){
+
+    footer{
+        display: none;
+    }
+
+    #blurb{
+        display: none;
+    }
+
+    #copyright{
+        display: none;
+    }
+
+    .content{
+        width: 400px;
+    }
+
+    #arcadelogowhite{
+        width: 400px;
+    }
+
+    
+}
+
+                     
+
+
+
+/* @group Blink */
+
+.blink {
+    -webkit-animation: blink 1s linear infinite;
+    -moz-animation: blink 1s linear infinite;
+    -ms-animation: blink 1s linear infinite;
+    -o-animation: blink 1s linear infinite;
+    animation: blink 1s linear infinite;
+}
+
+
+@-webkit-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-moz-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-ms-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@-o-keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 1; }
+    50.01% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/* @end */
+
