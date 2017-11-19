@@ -9,6 +9,12 @@ var keypress = require('keypress');
 var index = require('./routes/index');
 var p2 = require('./routes/p2');
 var p3 = require('./routes/p3');
+var p4 = require('./routes/p4');
+var p5 = require('./routes/p5');
+var p6 = require('./routes/p6');
+var p7 = require('./routes/p7');
+var p8 = require('./routes/p8');
+var p9 = require('./routes/p9');
 
 var app = express();
 
@@ -28,6 +34,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/p2', p2);
 app.use('/p3', p3);
+app.use('/p4', p4);
+app.use('/p5', p5);
+app.use('/p6', p6);
+app.use('/p7', p7);
+app.use('/p8', p8);
+app.use('/p9', p9);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
