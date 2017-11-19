@@ -172,6 +172,19 @@ footer{
     
 }
 
+@media screen and (max-height: 600px){
+
+    footer{
+        display:none;
+    } 
+
+    #blurb{
+        display: none;
+    }
+    
+
+}                     
+
                      
 
 
