@@ -2,10 +2,13 @@ extends layout
 
 block content
   script(src='/js/p4.js')
-  h1 Solution 
-  p(class='headline') Provide a library of virtual machines that can be streamed and used in any modern web browser. 
-  a(class='next', href='/p3') BACK 
-  a(class='next', href='/p5') NEXT
+  div(class='content')
+    div(class='title')
+        h1 Solution 
+    div(class='sticky_bottom')
+        p(class='headline') Provide a library of virtual machines that can be streamed and used in any modern web browser. 
+        a(class='next', href='/p3') BACK 
+        a(class='next', href='/p5') NEXT
 
   footer
     span(id='copyright') &copy;2015 Rep Communications, Inc

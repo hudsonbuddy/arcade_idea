@@ -2,12 +2,15 @@ extends layout
 
 block content
   script(src='/js/p5.js')
-  h1 Trajectory 
-  p(class='headline') People with Macbook Air's spend 95% of their time on their computer using only 10% of what the computer is capable of. 
-  p(class='headline') Internet already makes information available exactly when you need. And the size of information is only increasing, originally from kb of text, to mb of images, and now to GB of video. We think interactive software is next. 
-  p(class='headline') Advances in browser technology, internet speed and virtual machines combined make thin-client computing finally conenient to the end user. 
-  a(class='next', href='/p4') BACK 
-  a(class='next', href='/p6') NEXT
+  div(class='content')
+    div(class='title')
+        h1 Trajectory 
+    div(class='overflow_content')
+        p(class='headline') People with Macbook Air's spend 95% of their time on their computer using only 10% of what the computer is capable of. 
+        p(class='headline') Internet already makes information available exactly when you need. And the size of information is only increasing, originally from kb of text, to mb of images, and now to GB of video. We think interactive software is next. 
+        p(class='headline') Advances in browser technology, internet speed and virtual machines combined make thin-client computing finally conenient to the end user. 
+        a(class='next', href='/p4') BACK 
+        a(class='next', href='/p6') NEXT
 
   footer
     span(id='copyright') &copy;2015 Rep Communications, Inc

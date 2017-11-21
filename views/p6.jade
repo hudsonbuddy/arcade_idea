@@ -2,14 +2,17 @@ extends layout
 
 block content
   script(src='/js/p6.js')
-  h1 Our Ship 
-  img(src="/images/ship.png", class="")
-  p(class='headline') SPEED: Arcade cojnnects a virtual computer to a web browser in seconds. 
-  p(class='headline') TARGETING: Although any kind of software would be possible to stream, we started with games to demostrate graphics and latency sensitive software streaming to a browser. 
-  p(class='headline') DURABILITY: Arcade users average 10 minutes per session, while Facebook users average 2.3 minutes. 
+  div(class='content')
+    div(class='title')  
+      h1 Our Ship 
+    div(class='overflow_content')
+      img(src="/images/ship.png", class="")
+      p(class='headline') SPEED: Arcade connects a virtual computer to a web browser in seconds. 
+      p(class='headline') TARGETING: Although any kind of software would be possible to stream, we started with games to demostrate graphics and latency sensitive software streaming to a browser. 
+      p(class='headline') DURABILITY: Arcade users average 10 minutes per session, while Facebook users average 2.3 minutes. 
 
-  a(class='next', href='/p5') BACK 
-  a(class='next', href='/p7') NEXT
+      a(class='next', href='/p5') BACK 
+      a(class='next', href='/p7') NEXT
 
   footer
     span(id='copyright') &copy;2015 Rep Communications, Inc

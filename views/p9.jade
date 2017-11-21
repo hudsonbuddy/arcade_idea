@@ -2,9 +2,11 @@ extends layout
 
 block content
   script(src='/js/p9.js')
-  h1 Continue? 
-  a(class='back', href='/p8') BACK 
-  a(class='next', href='/test') GO! 
+  div(class='title')
+    h1 Continue? 
+  div(class='overflow_content')
+      a(class='next', href='/p8') BACK 
+      a(class='next', href='/test') GO! 
 
   footer
     span(id='copyright') &copy;2015 Rep Communications, Inc

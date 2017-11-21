@@ -1,12 +1,15 @@
 extends layout
 
 block content
-
-  script(src='/js/p2.js')
-  h1 Mission
-  p(class='headline') Deliver just-in-time computuing to a browser tab
-  a(class='next', href='/') BACK 
-  a(class='next', href='/p3') NEXT
+  div(class="content")
+    script(src='/js/p2.js')
+    div(class='title')
+      h1 Mission
+    div(class="sticky_bottom")
+        p(class='headline') Deliver over-the-top computing to a browser tab. 
+        a(class='next', href='/') BACK 
+        a(class='next', href='/p3') NEXT
+        p(class='hint') (Hint: Use the < and > arrow keys to navigate between pages)
 
 
   footer

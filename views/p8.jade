@@ -2,22 +2,26 @@ extends layout
 
 block content
   script(src='/js/p8.js')
-  h1 The Crew 
-  img(src="/images/captain.png", class="")
-  img(src="/images/wizard.png", class="")
-  p(class='headline') Best friends from high school. Incubated by Techstars in 2013 and studied engineering at MIT and Duke. Based in Berkeley, CA. (Oct 2015) 
-  a(class='back', href='/p7') BACK 
-  a(class='next', href='/p9') NEXT
-  div(class='crew')
-    p Name: Hudson
-    p Age: 25
-    p Class: Rouge
-    p Main Attribute: Agility
-  div(class='crew')
-    p Name: Colin 
-    p Age: 26
-    p Class: Wizard 
-    p Main Attribute: Intelligence 
+  div(class='title')
+    h1 The Crew 
+  div(class='overflow_content')
+      p(class='headline') Best friends from high school. Incubated by Techstars in 2013 and studied engineering at MIT and Duke. Based in Berkeley, CA. (Oct 2015) 
+      img(src="/images/captain.png", class="")
+      img(src="/images/wizard.png", class="")
+
+      div(class='crew')
+        p Name: Hudson
+        p Age: 25
+        p Class: Rouge
+        p Main Attribute: Agility
+      div(class='crew')
+        p Name: Colin 
+        p Age: 26
+        p Class: Wizard 
+        p Main Attribute: Intelligence 
+
+      a(class='next', href='/p7') BACK 
+      a(class='next', href='/p9') NEXT
 
   footer
     span(id='copyright') &copy;2015 Rep Communications, Inc

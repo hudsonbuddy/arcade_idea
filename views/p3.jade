@@ -1,11 +1,14 @@
 extends layout
 
 block content
-  script(src='/js/p3.js')
-  h1 Problem 
-  p(class='headline') Software available on-demand on the web is limited to simple apps, such as Google Docs. 
-  a(class='next', href='/p2') BACK 
-  a(class='next', href='/p4') NEXT
+  div(class='content')
+    script(src='/js/p3.js')
+    div(class='title')
+        h1 Problem 
+    div(class='sticky_bottom')
+        p(class='headline') Software available on-demand on the web is limited to simple apps, such as Google Docs. 
+        a(class='next', href='/p2') BACK 
+        a(class='next', href='/p4') NEXT
 
 
   footer

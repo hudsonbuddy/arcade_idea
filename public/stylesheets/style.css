@@ -3,6 +3,11 @@
     src: url('../assets/arcade.ttf');
 }
 
+@font-face{
+    font-family: Arcade_thin;
+    src: url('../assets/arcade_thin.ttf');
+}
+
 body {
 
     font-family: "Arcade", "Arial", serif;
@@ -12,27 +17,69 @@ body {
 }
 
 .content{
-    padding-top: 40px;
     margin: auto;
-    width: 800px;
-    height: 100%;
-    text-align: center;
+    width: 100%;
+    height: 95%;
+    top: 0;
+    position: fixed;
+    overflow: auto;
 }
 
 #blurb{
-    color: lime;
+    font-family: "Arcade_thin", "Arial", sans-serif;
+    font-size: 1.7em;
 }
 
 #comingsoon{
     font-size: 1.5em;
-    color: yellow;
+    color: lime;
     padding-top: 25px;
+}
+
+.title{
+    padding-top: 40px;
+    width: 88%;
+    margin: auto;
+}
+
+h1{
+    font-family: 'Arcade_thin', 'Arial', sans-serif;
+    font-size: 4em;
+}
+
+.sticky_bottom{
+    margin: auto;
+    padding-bottom: 80px;
+    width: 70%;
+    position: fixed;
+    bottom: 0;
+    margin-left: 15%;
+}
+
+.overflow_content{
+    margin: auto;
+    padding-bottom: 80px;
+    width: 70%;
+}
+
+
+.headline{
+    font-size: 2.3em;
+    padding-bottom: 20px;
+    font-family: 'Arcade_thin', 'Arial', sans-serif;
+}
+
+.next {
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.5em;
+
 }
 
 footer{
     width:100%;
-    height:50px;
-    position:absolute;
+    height: 5%;
+    position: fixed;
     bottom:0;
     left:0;
 }
