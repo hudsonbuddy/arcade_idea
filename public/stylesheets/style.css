@@ -122,6 +122,8 @@ footer{
 #credit{
     padding-right: 40px;
     float: right;
+    color: palevioletred;
+    text-decoration: none;
 }
 
 #char{
@@ -170,7 +172,7 @@ footer{
 
 /*sly frame stuff */
 .frame { 
-    width: 600px;
+    width: 100%;
     height: 500px; 
     padding: 0; 
     margin: auto;
@@ -195,11 +197,17 @@ footer{
 
 .choosergif{
     height: 300px;
+    padding: 30px 0;
+    display: block;
+    margin: auto;
 }
 
 .choosertitle{
     font-size: 1.5em;
     margin-top: 10px;
+    text-align: center;
+    padding: 100px 0;
+    color: palegoldenrod;
 }
 
 .chooserblurb{
